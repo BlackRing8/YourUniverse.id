@@ -50,7 +50,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = ["Enjoy this Universe I love U BY ", "Create your Universe"];
+const phrases = ["Enjoy this Universe..", "Create your Universe"];
 const el = document.getElementById("typewriter");
 
 let sleepTime = 80;
