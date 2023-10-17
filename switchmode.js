@@ -50,10 +50,10 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = ["I love U BY, Original Story by a BlackRing. Send your universe to appear on this page.Enjoy this Universe", "Original Story by a BlackRing. Send your universe to appear on this page.Create your Universe"];
+const phrases = ["Enjoy this Universe I love U BY ", "Create your Universe"];
 const el = document.getElementById("typewriter");
 
-let sleepTime = 50;
+let sleepTime = 80;
 
 let curPhraseIndex = 0;
 

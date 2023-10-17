@@ -4,7 +4,7 @@
 }
 
 #cursor {
-    color: black;
+    color: yellow;
     animation: blink 1s linear infinite;
 }
 
