@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="asset/logo.png" />
+    <title>YourUniverse.id</title>
+    <link href="dist/output.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- css pribadi -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+<body>
+
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+          <a href="index.html" class="flex items-center">
+            <img src="gambar/logo/logoyu.png" class="h-20 mr-1" alt="" />
+            <span class="self-center text-1xl whitespace-nowrap dark:text-white">𝓨𝓸𝓾𝓻 𝓤𝓷𝓲𝓿𝓮𝓻𝓼𝓮</span>
+          </a>
+          <div class="flex md:order-2">
+            <!-- tombol ubah tema -->
+            <button
+              id="theme-toggle"
+              type="button"
+              class="text-white border bg-green-800 border-black hover:bg-neutral-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center mr-2 md:mr-0 dark:bg-yellow-400 dark:hover:bg-yellow-200 dark:focus:ring-blue-800 dark:text-white"
+            >
+              <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+              <svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+  
+            <!-- akhir tombol ubah tema -->
+  
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Home</a
+              >
+              </li>
+              <li>
+                <a
+                  href="galeri.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Akhir nav -->
+
+      <!-- Jumbotron awal -->
+        
+<section class="bg-white mt-24 dark:bg-gray-900">
+  <div class="py-8 px-2 mx-auto max-w-screen-xl justify-center items-center">
+      <div class="flex flex-col justify-center items-center">
+        <div  class="flex bg-white border border-gray-200 mt-2 rounded-lg shadow flex-row w-96  dark:border-gray-700 dark:bg-gray-800 ">
+          <img class="object-cover rounded-t-lg h-80 w-48 rounded-none rounded-l-lg" src="gambar/cover/poster1.jpg" alt="" />
+          <div class="flex flex-col p-4 leading-normal">
+            <p class="mb-2 text-1xl lg:text-2x1 md:text-3x1 font-bold tracking-normal text-gray-900 dark:text-white">ElNarko</p>
+            
+<dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+  <div class="flex flex-col pb-1.5">
+      <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Penulis:</dt>
+      <dd class="text-sm font-semibold">BlackRing.Side</dd>
+  </div>
+  <div class="flex flex-col py-1.5">
+      <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Parts:</dt>
+      <dd class="text-sm font-semibold">5</dd>
+  </div>
+  <div class="flex flex-col pt-3">
+      <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Genre:
+      </dt>
+      <dd class="text-sm font-semibold">Action, Thriller, romance</dd>
+  </div>
+  <div class="flex flex-col pt-3">
+    <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Status:</dt>
+    <dd class="text-sm font-semibold">Not Finished</dd>
+</div>
+</dl>
+
+  </div>
+  </div>
+        
+
+  <button class="relative inline-flex items-center justify-center p-0.5 mt-8 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+    <span class="relative px-32 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+        Start Reading
+    </span>
+  </button>
+
+      </div>
+      
+  </div>
+</section>
+
+      <!-- Akhir section awal -->
+
+      <!-- Section sinopsis -->
+  
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid  gap-8 lg:gap-16">
+      <div class="flex flex-col justify-center">
+          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Synopsis</h1>
+          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deserunt tenetur facere temporibus molestias reprehenderit, exercitationem autem nisi assumenda cupiditate pariatur, numquam deleniti magni labore rem! Atque exercitationem pariatur qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis molestias ipsum, mollitia incidunt cupiditate repudiandae aliquid possimus iste! Ab provident, quod laudantium voluptates sunt aut officia. Sapiente optio quas quisquam!<br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores corrupti molestiae fugit tempore aliquid repudiandae ad hic ullam exercitationem quos perferendis, vitae quo eligendi sunt culpa, vero facilis dolorem.</p>
+          <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                  Start Reading
+                  <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a> 
+          </div>
+      </div>
+  </div>
+</section>
+
+
+      <!-- Akhir section -->
+
+
+      <footer id="contact" class="bg-white dark:bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://www.instagram.com/blackring.side" class="flex items-center mb-4 sm:mb-0">
+              <img src="gambar/logo/ig-logo.jpg" class="h-8 mr-3" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BlackRing.Side</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Home</a>
+              </li>
+              <li>
+                <a href="galeri.html" class="mr-4 hover:underline md:mr-6">Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Blackring™</a>. Made while smoking.</span>
+        </div>
+      </footer>
+  
+      <!-- Akhir footer -->
+      <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+      <script src="switchmode.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+  </html>
